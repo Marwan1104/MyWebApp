@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Registrasi</title>
+    <title>Form Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,14 +14,14 @@
             height: 100vh;
             margin: 0;
         }
-        .register-container {
+        .login-container {
             background-color: #fff;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 350px;
+            width: 300px;
         }
-        .register-container h2 {
+        .login-container h2 {
             text-align: center;
             margin-bottom: 20px;
         }
@@ -37,7 +37,7 @@
             border-color: #007bff;
             outline: none;
         }
-        .register-btn {
+        .login-btn {
             width: 100%;
             padding: 10px;
             background-color: #007bff;
@@ -47,36 +47,33 @@
             font-size: 16px;
             cursor: pointer;
         }
-        .register-btn:hover {
+        .login-btn:hover {
             background-color: #0056b3;
         }
-        .login-link {
+        .signup-link {
             text-align: center;
             margin-top: 15px;
         }
-        .login-link a {
+        .signup-link a {
             color: #007bff;
             text-decoration: none;
         }
-        .login-link a:hover {
+        .signup-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="register-container">
-        <h2>Registrasi</h2>
-        <form action="proses_register.php" method="POST">
-            <input type="text" name="fullname" class="form-input" placeholder="Nama Lengkap" required>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="proses_login.php" method="POST">
             <input type="text" name="username" class="form-input" placeholder="Username" required>
-            <input type="email" name="email" class="form-input" placeholder="Email" required>
             <input type="password" name="password" class="form-input" placeholder="Password" required>
-            <input type="password" name="confirm_password" class="form-input" placeholder="Konfirmasi Password" required>
-            <button type="submit" class="register-btn">Daftar</button>
+            <button type="submit" class="login-btn">Login</button>
         </form>
-        <div class="login-link">
-            Sudah punya akun? <a href="login.html">Login di sini</a>
+        <div class="signup-link">
+            Belum punya akun? <a href="signup.html">Daftar di sini</a>
         </div>
     </div>
 
